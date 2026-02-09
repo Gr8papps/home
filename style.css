@@ -2,8 +2,8 @@
 .dark-mode {
     --primary: #000000;
     --primary-hover: #000000;
-    --primary-light: rgba(255, 0, 0, 0.15);
-    --primary-lighter: rgba(155, 0, 0, 0.08);
+    --primary-light: rgba(0, 0, 0, 0.15);
+    --primary-lighter: rgba(0, 0, 0, 0.08);
     --accent: #a855f7;
     --accent-light: rgba(168, 85, 247, 0.15);
     --success: #34d399;
@@ -24,9 +24,9 @@
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6), 0 4px 6px -4px rgb(0 0 0 / 0.6);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7), 0 8px 10px -6px rgb(0 0 0 / 0.7);
     --shadow-glow: 0 0 20px rgba(252, 38, 81, 0.4);
-    --gradient-primary: linear-gradient(135deg, #ff0000 0%, #000000 100%);
-    --gradient-accent: linear-gradient(135deg, #ff0000 0%, #000000 100%);
-    --gradient-surface: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+    --gradient-primary: linear-gradient(135deg, #000000 0%, #000000 100%);
+    --gradient-accent: linear-gradient(135deg, #000000 0%, #000000 100%);
+    --gradient-surface: linear-gradient(135deg, #000000 0%, #000000 100%);
 }
 
 * {
