@@ -70,7 +70,7 @@ header {
     font-size: 1.75rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #ff0000 0%, rgba(255, 0, 0, 0.8) 100%);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -79,19 +79,19 @@ header {
 .search-container {
     display: flex;
     flex: 1;
-    max-width: 500px;
-    gap: 0.75rem;
+    max-width: 5000px;
+    gap: 1rem;
 }
 
 #searchBar {
     flex: 1;
     padding: 0.875rem 1rem;
-    border: 0;
+    border: .5;
     border-radius: var(--radius);
     background: var(--glass);
     backdrop-filter: blur(20px);
     color: var(--text);
-    font-size: 15px;
+    font-size: 30px;
     outline: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: var(--shadow-sm);
@@ -99,7 +99,7 @@ header {
 
 #searchBar:focus {
     background: var(--text);
-    box-shadow: 0 0 0 3px rgba(252, 38, 81, 0.25), var(--shadow);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), var(--shadow);
     transform: translateY(-1px);
     color: var(--glass);
 }
@@ -291,7 +291,7 @@ main {
 
 .zone-title {
     flex: 1;
-    min-width: 0;
+    min-width: 100;
 }
 
 #zoneName {
@@ -306,7 +306,7 @@ main {
 }
 
 #zoneAuthor {
-    font-size: 14px;
+    font-size: 100px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: all 0.2s ease;
@@ -360,7 +360,7 @@ main {
     justify-content: center;
     z-index: 2000;
     padding: 1rem;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 1s ease;
 }
 
 @keyframes fadeIn {
@@ -383,7 +383,7 @@ main {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border);
-    animation: slideInScale 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInScale 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes slideInScale {
@@ -408,7 +408,7 @@ main {
 
 #popupTitle {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
