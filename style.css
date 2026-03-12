@@ -40,7 +40,7 @@ body {
     padding: 0;
     background: var(--bg);
     color: var(--text);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 5s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
