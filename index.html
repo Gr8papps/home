@@ -742,12 +742,30 @@ body {
     background: var(--text-dim);
 }
 header {
-    background: var(--gradient-primary);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: var(--shadow-lg);
-    padding-bottom: 0;
+    /* 1. The Translucency */
+    background: rgba(255, 255, 255, 0.03); 
+    
+    /* 2. The "Liquid" Blur */
+    backdrop-filter: blur(1px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    
+    /* 3. The Specular Edge (The "Apple" Look) */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.4); /* Brighter top edge simulates light hitting from above */
+    
+    padding: 3rem;
+    border-radius: 30px; /* Modern, super-elliptical corners */
+    max-width: 500px;
+    text-align: center;
+    pointer-events: auto;
+    
+    /* 4. Layered Shadows for Depth */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(255, 255, 255, 0.05); /* Inner soft glow */
+    
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .header-upper {
     max-width: 1400px;
@@ -1055,17 +1073,30 @@ main {
     box-shadow: 0 8px 25px rgba(252, 38, 81, 0.5);
 }
 .game-card {
-    background: var(--bg-card);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    position: relative;
-    transition: var(--transition);
-    border: 1px solid var(--border);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    animation: fadeInCard 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  /* 1. The Translucency */
+    background: rgba(255, 255, 255, 0.03); 
+    
+    /* 2. The "Liquid" Blur */
+    backdrop-filter: blur(1px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    
+    /* 3. The Specular Edge (The "Apple" Look) */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(255, 255, 255, 0.4); /* Brighter top edge simulates light hitting from above */
+    
+    padding: 3rem;
+    border-radius: 30px; /* Modern, super-elliptical corners */
+    max-width: 500px;
+    text-align: center;
+    pointer-events: auto;
+    
+    /* 4. Layered Shadows for Depth */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(255, 255, 255, 0.05); /* Inner soft glow */
+    
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 @keyframes fadeInCard {
     from {
