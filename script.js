@@ -11,8 +11,8 @@ const zonesurls = [
     "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
-const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main/COVER_URL";
-const htmlURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main/HTML_URLS";
+const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home/main/COVER_URL";
+const htmlURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home/main/HTML_URLS";
 let zones = [];
 let popularityData = {};
 const featuredContainer = document.getElementById('featuredZones');
