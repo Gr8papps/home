@@ -5,14 +5,14 @@ const searchBar = document.getElementById('searchBar');
 const sortOptions = document.getElementById('sortOptions');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
-    "https://cdn.jsdelivr.net/%67%68/%67%6e%2d%6d%61%74%68/%61%73%73%65%74%73@%6d%61%69%6e/%7a%6f%6e%65%73%2e%6a%73%6f%6e",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets@latest/zones.json",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets@master/zones.json",
-    "https://cdn.jsdelivr.net/gh/gn-math/assets/zones.json"
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
-const coverURL = "https://cdn.jsdelivr.net/gh/gn-math/covers@main";
-const htmlURL = "https://cdn.jsdelivr.net/gh/gn-math/html@main";
+const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main/COVER_URL";
+const htmlURL = "https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main/HTML_URLS";
 let zones = [];
 let popularityData = {};
 const featuredContainer = document.getElementById('featuredZones');
@@ -29,7 +29,7 @@ async function listZones() {
             shajson = await sharesponse.json();
             sha = shajson[0]['sha'];
             if (sha) {
-                zonesURL = `https://cdn.jsdelivr.net/gh/gn-math/assets@${sha}/zones.json`;
+                zonesURL = `https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main@${sha}/zones.json`;
             }
           } catch (error) {
             try {
@@ -37,7 +37,7 @@ async function listZones() {
                 if (secondarysharesponse && secondarysharesponse.status === 200) {
                     sha = (await secondarysharesponse.text()).trim();
                     if (sha) {
-                        zonesURL = `https://cdn.jsdelivr.net/gh/gn-math/assets@${sha}/zones.json`;
+                        zonesURL = `https://cdn.jsdelivr.net/gh/Gr8papps/home@tree/main@${sha}/zones.json`;
                     }
                 }
             } catch(error) {}
