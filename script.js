@@ -5,9 +5,9 @@ const searchBar = document.getElementById('searchBar');
 const sortOptions = document.getElementById('sortOptions');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
-    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
-    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
-    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/main/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/latest/zones.json",
+    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/master/zones.json",
     "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
