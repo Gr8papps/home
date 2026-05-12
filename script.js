@@ -8,7 +8,7 @@ const zonesurls = [
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/gr8papps.github.io-home-cover/";
-const htmlURL = "https://cdn.jsdelivr.net/gh/Gr8papps/gr8papps.github.io-home-games/";
+const htmlURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@tree/main/games";
 let zones = [];
 let popularityData = {};
 const featuredContainer = document.getElementById('featuredZones');
@@ -101,6 +101,7 @@ async function listZones() {
             }
         }
     } catch (error) {
+        console.error(error);
         container.innerHTML = `Error loading zones: ${error}`;
     }
 }
