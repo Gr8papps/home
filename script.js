@@ -7,7 +7,7 @@ const zonesurls = [
     "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
-const coverURL = "https://github.com/Gr8papps/gr8papps.github.io-home-cover";
+const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/gr8papps.github.io-home-cover/";
 const htmlURL = "https://cdn.jsdelivr.net/gh/Gr8papps/gr8papps.github.io-home-games/";
 let zones = [];
 let popularityData = {};
