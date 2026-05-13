@@ -4,7 +4,7 @@ let zoneFrame = document.getElementById('zoneFrame');
 const searchBar = document.getElementById('searchBar');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
-    "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones/zones.json"
+    "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones/test%20zone/zones.json"
 ];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/Gr8papps/gr8papps.github.io-home-cover/";
@@ -25,7 +25,7 @@ async function listZones() {
             shajson = await sharesponse.json();
             sha = shajson[0]['sha'];
             if (sha) {
-                zonesURL = `https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones.json`;
+                zonesURL = `https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones/test%20zone/zones.json`;
             }
           } catch (error) {
             try {
@@ -33,7 +33,7 @@ async function listZones() {
                 if (secondarysharesponse && secondarysharesponse.status === 200) {
                     sha = (await secondarysharesponse.text()).trim();
                     if (sha) {
-                        zonesURL = `https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones.json`;
+                        zonesURL = `https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/zones/test%20zone/zones.json`;
                     }
                 }
             } catch(error) {}
