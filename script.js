@@ -2,9 +2,11 @@ const container = document.getElementById('container');
 const zoneViewer = document.getElementById('zoneViewer');
 let zoneFrame = document.getElementById('zoneFrame');
 const searchBar = document.getElementById('searchBar');
+const sortOptions = document.getElementById('sortOptions');
 // https://www.jsdelivr.com/tools/purge
-const zonesurls = ["https://raw.githack.com/Gr8papps/home/main/zone.json"];
-    
+const zonesurls = [
+    "https://raw.githack.com/Gr8papps/home/main/zone.json"
+];
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/covers/";
 const htmlURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/games/";
@@ -24,15 +26,15 @@ async function listZones() {
             shajson = await sharesponse.json();
             sha = shajson[0]['sha'];
             if (sha) {
-                zonesURL = `https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zone.json`;
+                zonesURL = `https://raw.githack.com/Gr8papps/home/main/zone.json`;
             }
           } catch (error) {
             try {
-                let secondarysharesponse = await fetch("https://cdn.jsdelivr.net/gh/Gr8papps/home@main/sha.txt"+Date.now());
+                let secondarysharesponse = await fetch("https://raw.githubusercontent.com/gn-math/xml/refs/heads/main/sha.txt?t="+Date.now());
                 if (secondarysharesponse && secondarysharesponse.status === 200) {
                     sha = (await secondarysharesponse.text()).trim();
                     if (sha) {
-                        zonesURL = `https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zone.json`;
+                        zonesURL = `https://raw.githack.com/Gr8papps/home/main/zone.json`;
                     }
                 }
             } catch(error) {}
