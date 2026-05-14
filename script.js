@@ -6,7 +6,6 @@ const searchBar = document.getElementById('searchBar');
 const zonesurls = [
     "https://raw.githack.com/Gr8papps/home/main/zone.json"
     
-let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/covers/";
 const htmlURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/games/";
 let zones = [];
