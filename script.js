@@ -4,7 +4,7 @@ let zoneFrame = document.getElementById('zoneFrame');
 const searchBar = document.getElementById('searchBar');
 // https://www.jsdelivr.com/tools/purge
 const zonesurls = [
-    "https://cdn.jsdelivr.net/gh/Gr8papps/home@main/zone.json"
+    "https://rawcdn.githack.com/Gr8papps/home/69819476518efe096397e87f0b143f685673321e/zone.json"
     
 let zonesURL = zonesurls[Math.floor(Math.random() * zonesurls.length)];
 const coverURL = "https://cdn.jsdelivr.net/gh/gr8pfart/assets@main/covers/";
