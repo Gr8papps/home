@@ -3,13 +3,21 @@
     "id": -1,
     "name": "send htmls to add (doesn't work)",
     "cover": "{COVER_URL}/dc.png",
-    "url": ""
+    "url": "https://discord.gg/n2WBqSRCpj"
   },
   {
     "id": 1,
     "name": "test",
     "cover": "{COVER_URL}/1.png",
     "url": "{HTML_URL}/1.html",
+    "author": "gr8p",
+    "authorLink": "https://gr8papps.github.io/home"
+  },
+   {
+    "id": 2,
+    "name": "Older Gr8pFart Version",
+    "cover": "{COVER_URL}/2.png",
+    "url": "{HTML_URL}/2.html",
     "author": "gr8p",
     "authorLink": "https://gr8papps.github.io/home"
   }
