@@ -20,5 +20,13 @@
     "url": "{HTML_URL}/2.html",
     "author": "gr8p",
     "authorLink": "https://gr8papps.github.io/home"
+  },
+     {
+    "id": 3,
+    "name": "Clover Pit",
+    "cover": "{COVER_URL}/3.png",
+    "url": "{HTML_URL}/3.html",
+    "author": "Future Friends Games",
+    "authorLink": "https://store.steampowered.com/app/3314790/CloverPit/"
   }
 ]
