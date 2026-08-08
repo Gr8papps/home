@@ -28,5 +28,13 @@
     "url": "{HTML_URL}/3.html",
     "author": "Future Friends Games",
     "authorLink": "https://store.steampowered.com/app/3314790/CloverPit/"
+  },
+  {
+    "id": 4,
+    "name": "People Playground",
+    "cover": "{COVER_URL}/4.png",
+    "url": "{HTML_URL}/4.html",
+    "author": "Studio Minus",
+    "authorLink": "https://store.steampowered.com/app/1118200/People_Playground/"
   }
 ]
