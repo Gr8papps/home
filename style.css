@@ -594,3 +594,15 @@ footer {
         transform: translateY(-4px) scale(1.01);
     }
 }
+#intro-overlay {
+  position: fixed;       /* Keeps it locked on the screen */
+  top: 0;
+  left: 0;
+  width: 100%;           /* Covers full width */
+  height: 100vh;         /* Covers full height */
+  background-color: #ffffff; /* Change this to match your GIF's background */
+  display: flex;         /* Centers the GIF inside the box */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;         /* Makes sure it stays on top of everything */
+}
