@@ -600,7 +600,7 @@ footer {
   left: 0;
   width: 100%;           /* Covers full width */
   height: 100vh;         /* Covers full height */
-  background-color: #ffffff; /* Change this to match your GIF's background */
+  background-color: #000000; /* Change this to match your GIF's background */
   display: flex;         /* Centers the GIF inside the box */
   justify-content: center;
   align-items: center;
