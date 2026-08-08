@@ -1,18 +1,19 @@
 <script>
-  // Wait for the page to fully load
   window.addEventListener('load', function() {
     
-    // Set a timer (3000 means 3000 milliseconds, or 3 seconds)
-    // Change "3000" to however long your GIF is!
-    setTimeout(function() {
+    // Grab the video element
+    const introVideo = document.getElementById('intro-video');
+    
+    // Listen for the exact moment the video finishes
+    introVideo.addEventListener('ended', function() {
       
-      // Hide the GIF overlay
+      // Hide the video overlay
       document.getElementById('intro-overlay').style.display = 'none';
       
       // Show the main website
       document.getElementById('main-website').style.display = 'block';
       
-    }, 3000); 
+    });
     
   });
 </script>
