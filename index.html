@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Gr8pFart</title>
 
   <style>
     /* Resets the page margins so the video goes exactly to the edges */
@@ -83,7 +83,16 @@
 <body class="dark-mode">
     <header>
         <div class="header-content">
-            <div class="logo"><a href=""></a></div>
+          <div class="liquid-glass"><div class="logo">Gr8pFart Change Log: Fixed games I Can Add And Remove Games And Something Big Is Coming.<a href=""></a></div>
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Gr8pFart" oninput="filterZones()">
+                <select id="sortOptions" onchange="sortZones()">
+                    <option value="name">Name</option>
+                    <option value="id">ID (Date)</option>
+                    <option value="popular">Popular</option>
+                </select>
+            </div></div>
+            <div class="logo">Gr8pFart<a href=""></a></div>
             <div class="search-container">
                 <input type="text" id="searchBar" placeholder="Gr8pFart" oninput="filterZones()">
                 <select id="sortOptions" onchange="sortZones()">
@@ -133,10 +142,10 @@
                 <a id="zoneAuthor" href="#" target="_blank">by Author</a>
             </div>
             <div class="zone-controls">
-                <button onclick="fullscreenZone()">Fullscreen</button>
+              <div class="liquid-glass"><button onclick="fullscreenZone()">Fullscreen</button>
                 <button onclick="aboutBlank()">Open in New Tab</button>
                 <button onclick="downloadZone()">Download</button>
-                <button onclick="closeZone()">Close</button>
+                <button onclick="closeZone()">Close</button></div>
             </div>
         </div>
         <iframe id="zoneFrame"></iframe>
